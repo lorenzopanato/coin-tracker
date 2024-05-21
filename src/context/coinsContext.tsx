@@ -6,32 +6,48 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 interface CoinsData {
   coinsData: ICoin[];
-  getAllCoins: () => void;
+  pageCoins: ICoin[];
+  fetchAllCoins: () => void;
+  fetchPageCoins: (page: number) => void;
 }
 
 const CoinsContext = createContext({} as CoinsData);
 
+const apiBaseUrl = "https://api.coingecko.com/api/v3/coins/markets";
+
 export function CoinsProvider({ children }: IChildren) {
   const [coinsData, setCoinsData] = useState<ICoin[]>([]);
+  const [pageCoins, setPageCoins] = useState<ICoin[]>([]);
 
-  const getAllCoins = async () => {
+  const fetchAllCoins = async () => {
+    try {
+      const response = await axios.get(`${apiBaseUrl}?vs_currency=usd`);
+      setCoinsData(response.data);
+    } catch (error) {
+      console.error("Error fetching all coins data:", error);
+    }
+  };
+
+  const fetchPageCoins = async (page: number) => {
     try {
       const response = await axios.get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd"
+        `${apiBaseUrl}?vs_currency=usd&page=${page}&per_page=10`
       );
-      const data = response.data;
-      setCoinsData(data);
+      setPageCoins(response.data);
     } catch (error) {
-      console.error("Error fetching coins data:", error);
+      console.error("Error fetching page coins data:", error);
     }
   };
 
   useEffect(() => {
-    getAllCoins();
+    fetchAllCoins();
+    fetchPageCoins(1);
   }, []);
 
   return (
-    <CoinsContext.Provider value={{ coinsData, getAllCoins }}>
+    <CoinsContext.Provider
+      value={{ coinsData, pageCoins, fetchAllCoins, fetchPageCoins }}
+    >
       {children}
     </CoinsContext.Provider>
   );
