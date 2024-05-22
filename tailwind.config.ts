@@ -24,7 +24,8 @@ const config: Config = {
         secondary: "#22d3ee",
         mainGray: "#cccccc",
         darkGray: "#27272a",
-        background: "#171717"
+        background: "#171717",
+        gradient: "#092733"
       },
     },
   },

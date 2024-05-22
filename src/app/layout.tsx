@@ -12,7 +12,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Coin Tracker",
+  title: "CoinTracker",
   description: "Track Cryptocurrency Stats in Real Time",
 };
 

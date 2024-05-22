@@ -11,7 +11,7 @@ import { formatDate, formatPrice } from "@/utils/formatters/coinDataFormat";
     const ethereumData = coinsData.filter((coin) => coin.id === "ethereum")[0];
 
     return (
-      <section className="flex justify-center w-full pt-16 xl:pt-28 pb-20 xl:pb-36 bg-gradient-to-t from-background via-[#0d232e] to-background">
+      <section className="flex justify-center w-full pt-16 xl:pt-28 pb-20 xl:pb-36 bg-gradient-to-t from-background via-gradient to-background">
         <div className="max-w-screen-2xl h-[460px] lg:h-[250px] px-10 flex flex-col lg:flex-row gap-20 xl:gap-40">
           <article className="flex-1 flex flex-col gap-4">
             <h1 className="font-medium text-4xl xl:text-[3rem] leading-tight">
