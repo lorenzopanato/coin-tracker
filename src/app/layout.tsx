@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
 import { CoinsProvider } from "@/context/coinsContext";
 
 const openSans = Open_Sans({
@@ -14,6 +13,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "CoinTracker",
   description: "Track Cryptocurrency Stats in Real Time",
+  keywords: "cryptocurrency, crypto, coin, bitcoin",
 };
 
 export default function RootLayout({
@@ -25,7 +25,6 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${openSans.className} bg-background overflow-x-hidden`}>
         <CoinsProvider>
-          <Header />
           {children}
         </CoinsProvider>
       </body>

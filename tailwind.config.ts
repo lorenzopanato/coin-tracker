@@ -22,7 +22,7 @@ const config: Config = {
       colors: {
         primary: "#ffffff",
         secondary: "#22d3ee",
-        mainGray: "#cccccc",
+        mainGray: "#E8E8E8",
         darkGray: "#27272a",
         background: "#171717",
         gradient: "#092733"

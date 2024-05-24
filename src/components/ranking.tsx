@@ -36,36 +36,36 @@ export default function Ranking() {
     },
   });
 
-  const changePage = (event: React.ChangeEvent<unknown>, page: number) => {
+  const changePage = (_event: React.ChangeEvent<unknown>, page: number) => {
     fetchPageCoins(page);
   };
 
   return (
     <ThemeProvider theme={theme}>
-      <section className="flex flex-col items-center justify-start w-full bg-darkGray/50 px-10 mt-28 py-20 text-center">
-        <div className="pb-24 xl:pb-40 flex flex-col items-center">
+      <section id="features" className="flex flex-col items-center justify-start w-full bg-darkGray/50 px-7 sm:px-10 mt-28 py-20 text-center">
+        <div className="pb-16 sm:pb-24 xl:pb-40 flex flex-col items-center">
           <div className="flex items-center gap-2 rounded-full px-4 py-1 text-sm font-medium bg-gradient-to-tr from-darkGray to-background/90 border border-zinc-700">
             <TiStarFullOutline className="text-secondary" size={16} />
             Discover Our Features
           </div>
-          <h2 className="text-[1.9rem] mt-4 xl:text-[2.2rem] text-center font-medium">
+          <h2 className="text-[1.5rem] sm:text-[1.9rem] xl:text-[2.2rem] mt-4 text-center font-medium">
             Explore CoinTracker Main Features
           </h2>
-          <p className="text-mainGray mt-2 text-base xl:text-lg w-full max-w-[540px]">
+          <p className="text-mainGray mt-2 text-sm sm:text-base xl:text-lg w-full max-w-[540px]">
             At CoinTracker, we are dedicated to providing our users with
             up-to-date data through a beautiful and modern interface
           </p>
         </div>
-        <div className="flex gap-[110px] max-w-screen-2xl w-full">
-          <div className="w-full max-w-[700px]">
-            <div>
+        <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-[80px] lg:gap-[110px] max-w-screen-2xl w-full">
+          <div className="w-full lg:max-w-[700px] text-center lg:text-start">
+            <div className="flex flex-col items-center lg:items-start">
               <div className="flex items-center gap-4 xl:gap-8">
                 <MdOutlineQueryStats className="text-secondary text-[2.2rem] xl:text-[2.8rem]" />
-                <h3 className="text-start text-[1.5rem] xl:text-[2rem]">
+                <h3 className="text-start text-[1.3rem] sm:text-[1.5rem] xl:text-[2rem]">
                   Real-Time Insights
                 </h3>
               </div>
-              <p className="text-mainGray pt-6 max-w-[600px] text-base xl:text-lg text-start">
+              <p className="text-mainGray pt-4 lg:pt-6 w-full lg:max-w-[600px] text-sm sm:text-base xl:text-lg">
                 Stay ahead of the crypto curve with real-time market data,
                 expert analysis, and the latest trends. Our plataform enables
                 you to make timely and informed investment decisions in the
@@ -73,20 +73,20 @@ export default function Ranking() {
                 you can confidently manage the crypto market's complexities and
                 boost your investment potential.
               </p>
-              <span className="flex items-center w-[220px] cursor-pointer gap-2 text-base xl:text-lg mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">
+              <span className="flex items-center lg:w-[220px] cursor-pointer gap-2 text-sm sm:text-base xl:text-lg mt-6 lg:mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">
                 More information
                 <LuArrowRight className="text-xl" />
               </span>
             </div>
 
-            <div className="pt-[25%] xl:pt-[40%]">
+            <div className="pt-[18%] xl:pt-[40%] flex flex-col items-center lg:items-start">
               <div className="flex items-center gap-4 xl:gap-8">
                 <LuWallet className="text-secondary text-[2.2rem] xl:text-[2.8rem]" />
-                <h3 className="text-start text-[1.5rem] xl:text-[2rem]">
+                <h3 className="text-start text-[1.3rem] sm:text-[1.5rem] xl:text-[2rem]">
                   Secure Wallet Integration
                 </h3>
               </div>
-              <p className="text-mainGray pt-6 max-w-[600px] text-base xl:text-lg text-start">
+              <p className="text-mainGray pt-4 lg:pt-6 w-full lg:max-w-[600px] text-sm sm:text-base xl:text-lg">
                 Your digital assets are precious. CoinTracker provides robust
                 security and wallet integration to safeguard your investments.
                 With reliable protection and easy access, you can feel confident
@@ -94,20 +94,20 @@ export default function Ranking() {
                 portfolio. Don't miss the chance to secure your investments
                 today.
               </p>
-              <span className="flex items-center w-[220px] cursor-pointer gap-2 text-base xl:text-lg mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">
+              <span className="flex items-center lg:w-[220px] cursor-pointer gap-2 text-sm sm:text-base xl:text-lg mt-6 lg:mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">
                 Get started now
                 <LuArrowRight className="text-xl" />
               </span>
             </div>
 
-            <div className="pt-[25%] xl:pt-[40%]">
+            <div className="pt-[18%] xl:pt-[40%] flex flex-col items-center lg:items-start">
               <div className="flex items-center gap-3 xl:gap-6">
                 <AiOutlineThunderbolt className="text-secondary text-[2.2rem] xl:text-[2.8rem]" />
-                <h3 className="text-start text-[1.5rem] xl:text-[2rem]">
+                <h3 className="text-start text-[1.3rem] sm:text-[1.5rem] xl:text-[2rem]">
                   AI-Powered Predictions
                 </h3>
               </div>
-              <p className="text-mainGray pt-6 max-w-[600px] text-base xl:text-lg text-start">
+              <p className="text-mainGray pt-4 lg:pt-6 w-full lg:max-w-[600px] text-sm sm:text-base xl:text-lg">
                 Gain a competitive edge with our AI-powered market predictions.
                 Our advanced algorithms analyze market trends and data to
                 provide accurate forecasts, giving you valuable insights to stay
@@ -115,40 +115,40 @@ export default function Ranking() {
                 informed decisions and seize profitable opportunities in the
                 ever-changing landscape of financial markets.
               </p>
-              <span className="flex items-center w-[220px] cursor-pointer gap-2 text-base xl:text-lg mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">
+              <span className="flex items-center lg:w-[220px] cursor-pointer gap-2 text-sm sm:text-base xl:text-lg mt-6 lg:mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">
                 To know better
                 <LuArrowRight className="text-xl" />
               </span>
             </div>
 
-            <div className="xl:mb-10 pt-[25%] xl:pt-[40%]">
+            <div className="xl:mb-10 pt-[18%] xl:pt-[40%] flex flex-col items-center lg:items-start">
               <div className="flex items-center gap-3 xl:gap-6">
                 <LuGlobe className="text-secondary text-[2.2rem] xl:text-[2.8rem]" />
-                <h3 className="text-start text-[1.5rem] xl:text-[2rem]">
+                <h3 className="text-start text-[1.3rem] sm:text-[1.5rem] xl:text-[2rem]">
                   Global Community
                 </h3>
               </div>
-              <p className="text-mainGray pt-6 max-w-[600px] text-base xl:text-lg text-start">
+              <p className="text-mainGray pt-4 lg:pt-6 w-full lg:max-w-[600px] text-sm sm:text-base xl:text-lg">
                 Share insights, discover new opportunities, and grow together in
                 this exciting financial landscape. Join our community to access
                 valuable knowledge, network with like-minded individuals, and
                 stay informed about the latest trends and developments.
               </p>
-              <span className="flex items-center w-[220px] cursor-pointer gap-2 text-base xl:text-lg mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">
+              <span className="flex items-center lg:w-[220px] cursor-pointer gap-2 text-sm sm:text-base xl:text-lg mt-6 lg:mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">
                 Join us via discord
                 <LuArrowRight className="text-xl" />
               </span>
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-center max-h-[90vh] sticky top-8 xl:top-14">
+          <div className="flex-1 flex flex-col items-center max-h-[90vh] w-full lg:w-auto lg:sticky lg:top-8 xl:top-14">
             <div className="flex items-center gap-2 rounded-full px-5 py-1.5 text-primary text-sm bg-gradient-to-tr from-darkGray to-background/90 border border-zinc-700 mb-6">
               <LuLineChart size={16} />
               Market update
             </div>
             <TableContainer
               component={Paper}
-              className="rounded-md bg-transparent border border-zinc-700 w-full"
+              className="rounded-md bg-darkGray/50 border border-zinc-700 w-full"
             >
               <Table aria-label="simple table">
                 <TableHead className="bg-gradient-to-tr from-darkGray to-background/50">
@@ -249,6 +249,16 @@ export default function Ranking() {
                   shape="rounded"
                   color="primary"
                   onChange={changePage}
+                  size="small"
+                  className="block sm:hidden"
+                />
+                <Pagination
+                  count={coinsData.length / 10}
+                  shape="rounded"
+                  color="primary"
+                  onChange={changePage}
+                
+                  className="hidden sm:block"
                 />
               </ThemeProvider>
             </div>
