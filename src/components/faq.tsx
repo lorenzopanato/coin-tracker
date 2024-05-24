@@ -65,7 +65,7 @@ export default function Faq() {
             className="text-primary py-2 sm:py-4"
           >
             <h2 className="text-sm sm:text-base xl:text-lg">
-              I'm new to cryptocurrency. Can I use CoinTracker?
+              I&apos;m new to cryptocurrency. Can I use CoinTracker?
             </h2>
           </AccordionSummary>
           <AccordionDetails>

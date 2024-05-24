@@ -70,7 +70,7 @@ export default function Ranking() {
                 expert analysis, and the latest trends. Our plataform enables
                 you to make timely and informed investment decisions in the
                 ever-changing cryptocurrency landscape. By using these insights,
-                you can confidently manage the crypto market's complexities and
+                you can confidently manage the crypto market&apos;s complexities and
                 boost your investment potential.
               </p>
               <span className="flex items-center lg:w-[220px] cursor-pointer gap-2 text-sm sm:text-base xl:text-lg mt-6 lg:mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">
@@ -91,7 +91,7 @@ export default function Ranking() {
                 security and wallet integration to safeguard your investments.
                 With reliable protection and easy access, you can feel confident
                 that your assets are safe while managing your cryptocurrency
-                portfolio. Don't miss the chance to secure your investments
+                portfolio. Don&apos;t miss the chance to secure your investments
                 today.
               </p>
               <span className="flex items-center lg:w-[220px] cursor-pointer gap-2 text-sm sm:text-base xl:text-lg mt-6 lg:mt-8 xl:mt-12 transition-all hover:text-secondary hover:gap-2.5">

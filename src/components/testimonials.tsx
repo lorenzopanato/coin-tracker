@@ -3,6 +3,7 @@ import User1 from "../../public/user-1.jpg";
 import User2 from "../../public/user-2.jpg";
 import User3 from "../../public/user-3.jpg";
 import { LuQuote } from "react-icons/lu";
+import Image from "next/image";
 
 export default function Testimonials() {
   return (
@@ -17,7 +18,7 @@ export default function Testimonials() {
         </h2>
         <p className="text-mainGray mt-2 text-sm sm:text-base xl:text-lg w-full max-w-[700px]">
           At CoinTracker, the opinions and experiences of our users matter the
-          most. Here's what some of our valued users have to say about their
+          most. Here&apos;s what some of our valued users have to say about their
           journey with us.
         </p>
       </div>
@@ -41,9 +42,9 @@ export default function Testimonials() {
             <LuQuote className="text-xl sm:text-2xl" />
           </div>
           <p className="text-mainGray pt-4 text-sm sm:text-base">
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+            &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
             voluptate in aliquid cumque consequatur recusandae itaque quae
-            obcaecati odit est!"
+            obcaecati odit est!&quot;
           </p>
         </div>
 
@@ -65,9 +66,9 @@ export default function Testimonials() {
             <LuQuote className="text-xl sm:text-2xl" />
           </div>
           <p className="text-mainGray pt-4 text-sm sm:text-base">
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+            &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
             voluptate in aliquid cumque consequatur recusandae itaque quae
-            obcaecati odit est!"
+            obcaecati odit est!&quot;
           </p>
         </div>
 
@@ -87,9 +88,9 @@ export default function Testimonials() {
             <LuQuote className="text-xl sm:text-2xl" />
           </div>
           <p className="text-mainGray pt-4 text-sm sm:text-base">
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+            &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
             voluptate in aliquid cumque consequatur recusandae itaque quae
-            obcaecati odit est!"
+            obcaecati odit est!&quot;
           </p>
         </div>
       </div>
