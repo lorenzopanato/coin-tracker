@@ -10,7 +10,7 @@ export default function CoinsCarousel() {
       <h2 className="text-[1.5rem] sm:text-[1.9rem] xl:text-[2.2rem] font-medium">Data for 100+ cryptocurrencies</h2>
       <p className="text-mainGray text-sm sm:text-base xl:text-lg mt-2 xl:mt-3 mb-10 xl:mb-16">Check out updated market data and much more for the cryptocurrencies we support</p>
 
-      <div className="inline-flex gap-12 sm:gap-16">
+      <div className="inline-flex gap-12 sm:gap-16 overflow-hidden">
         <div className="flex items-center gap-8 sm:gap-16 animate-infinite-scroll">
           {coinsData.map((coin, index) => (
             <img
