@@ -23,7 +23,7 @@ export default function Header() {
         <div className="h-full bg-textLight dark:text-textLight dark:bg-slate-900 text-mainGray">
           <div className="py-5 px-7 flex items-center justify-between">
             <Link
-              href={"/"}
+              href="/"
               className="bg-gradient-to-tr from-primary to-mainGray text-transparent bg-clip-text transition-colors text-xl font-semibold"
             >
               cointracker.
@@ -34,6 +34,7 @@ export default function Header() {
             <li className="relative flex justify-start group w-auto">
               <ScrollLink
                 to="home"
+                href="#home"
                 className="hover:text-primary transition-all cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -47,6 +48,7 @@ export default function Header() {
             <li className="relative flex justify-start group w-auto">
               <ScrollLink
                 to="coins-carousel"
+                href="#coins-carousel"
                 className="hover:text-primary transition-all cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -60,6 +62,7 @@ export default function Header() {
             <li className="relative flex justify-start group w-auto">
               <ScrollLink
                 to="features"
+                href="#features"
                 className="hover:text-primary transition-all cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -73,6 +76,7 @@ export default function Header() {
             <li className="relative flex justify-start group w-auto">
               <ScrollLink
                 to="testimonials"
+                href="#testimonials"
                 className="hover:text-primary transition-all cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -86,6 +90,7 @@ export default function Header() {
             <li className="relative flex justify-start group w-auto">
               <ScrollLink
                 to="faq"
+                href="#faq"
                 className="hover:text-primary transition-all cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -115,6 +120,7 @@ export default function Header() {
           <li className="relative group flex justify-start">
             <ScrollLink
               to="home"
+              href="#home"
               className="hover:text-primary transition-all cursor-pointer"
               spy={true}
               smooth={true}
@@ -127,6 +133,7 @@ export default function Header() {
           <li className="relative group flex justify-start">
             <ScrollLink
               to="coins-carousel"
+              href="#coins-carousel"
               className="hover:text-primary transition-all cursor-pointer"
               spy={true}
               smooth={true}
@@ -139,6 +146,7 @@ export default function Header() {
           <li className="relative group flex justify-start">
             <ScrollLink
               to="features"
+              href="#features"
               className="hover:text-primary transition-all cursor-pointer"
               spy={true}
               smooth={true}
@@ -151,6 +159,7 @@ export default function Header() {
           <li className="relative group flex justify-start">
             <ScrollLink
               to="testimonials"
+              href="#testimonials"
               className="hover:text-primary transition-all cursor-pointer"
               spy={true}
               smooth={true}
@@ -163,6 +172,7 @@ export default function Header() {
           <li className="relative group flex justify-start">
             <ScrollLink
               to="faq"
+              href="#faq"
               className="hover:text-primary transition-all cursor-pointer"
               spy={true}
               smooth={true}

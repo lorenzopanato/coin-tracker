@@ -24,9 +24,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${openSans.className} bg-background overflow-x-hidden`}>
-        <CoinsProvider>
-          {children}
-        </CoinsProvider>
+        <CoinsProvider>{children}</CoinsProvider>
       </body>
     </html>
   );

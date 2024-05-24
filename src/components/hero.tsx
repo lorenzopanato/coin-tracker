@@ -26,10 +26,12 @@ export default function Hero() {
         <div className="flex gap-4 mt-4 text-sm xl:text-base">
           <ScrollLink
             to="faq"
+            href="#faq"
             className="hover:text-primary transition-all cursor-pointer"
             spy={true}
             smooth={true}
             duration={700}
+            
           >
             <button className="py-2 px-5 rounded-full text-sm sm:text-base bg-primary text-black font-semibold transition-all hover:opacity-90">
               Learn more
@@ -38,10 +40,12 @@ export default function Hero() {
 
           <ScrollLink
             to="features"
+            href="#features"
             className="hover:text-primary transition-all cursor-pointer"
             spy={true}
             smooth={true}
             duration={700}
+            
           >
             <button
               onClick={() => console.log(bitcoinData)}
