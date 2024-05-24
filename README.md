@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">CoinTracker</h1>
 
-## Getting Started
+<p align="center">Página integrada à API CoinGecko, com dados atualizados em tempo real de mais de 100 criptomoedas.</p>
+<br />
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#lighthouse">Lighthouse</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![image](https://github.com/lorenzopanato/coin-tracker/assets/132415449/23bfe6d2-73c6-4788-a1e7-6d584216063e)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![image](https://github.com/lorenzopanato/coin-tracker/assets/132415449/cd1c0f54-e8f7-423c-b595-2cc5942923d4)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🚀 Tecnologias
 
-## Learn More
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-To learn more about Next.js, take a look at the following resources:
+- React
+- Next.js
+- TypeScript
+- ContextAPI
+- Tailwind CSS
+- Material UI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Sobre o Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Site: [Link para o Vercel](https://e-clothing-silk.vercel.app/)
 
-## Deploy on Vercel
+## Lighthouse
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Todos os testes do Lighthouse alcançaram ótimos desempenhos:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image](https://github.com/lorenzopanato/coin-tracker/assets/132415449/bffda3ac-1e56-4009-af2e-e98cbcb48d2b)
